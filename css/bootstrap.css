@@ -12,6 +12,10 @@ html {
 body {
   margin: 0;
 }
+.aboutMePage{
+    box-shadow:10px 10px 5px #888888;
+    align-content: center;
+}
 article,
 aside,
 details,
@@ -238,6 +242,7 @@ th {
   h3 {
     page-break-after: avoid;
   }
+
   .navbar {
     display: none;
   }
