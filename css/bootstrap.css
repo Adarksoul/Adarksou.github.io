@@ -12,6 +12,28 @@ html {
 body {
   margin: 0;
 }
+figure {
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+figure:hover figcaption {
+  opacity: 1;
+  visibility: visible;
+}
+figure figcaption {
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 100%;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity .5s ease, visibility .5s;
+  transition: opacity .5s ease, visibility .5s;
+  visibility: hidden;
+  width: 100%;
+}
 .aboutMePage{
     box-shadow:10px 10px 5px #888888;
     align-content: center;
@@ -4287,7 +4309,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
-.navbar-brand > img {
+.navbar-brand:hover > img {
   display: block;
 }
 @media (min-width: 768px) {
